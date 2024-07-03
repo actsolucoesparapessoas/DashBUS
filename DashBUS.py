@@ -324,7 +324,7 @@ if uploaded_file is not None:
                 st.write(FiltraData)
             
             st.divider()
-            st.title("DashBUS - Painel para análise da Dirigibilidade Motoristas")
+            st.title("DashBUS - Painel para análise da Dirigibilidade dos Motoristas")
             ColsA = st.columns(4)
             with ColsA[0]:
                 Container1 = st.container(border = True)
@@ -361,7 +361,7 @@ if uploaded_file is not None:
                     MKD('DADOS DOS VEÍCULOS UTILIZADOS', 'left', 18, 'black')
                     ColsA4 = st.columns(2)
                     with ColsA4[0]:
-                        MKD('Veículo que mais Dirige ', 'left', 28, 'black')                        
+                        MKD('Veículo que mais Dirige ', 'left', 26, 'black')                        
                     with ColsA4[1]:  
                         MKD(VEICULO_MAIS_DIRIGE, 'left', 44, 'black')                       
                     st.write('') 
