@@ -363,7 +363,7 @@ if uploaded_file is not None:
                     with ColsA4[0]:
                         MKD('Veículo que mais Dirige ', 'left', 28, 'black')                        
                     with ColsA4[1]:  
-                        MKD(VEICULO_MAIS_DIRIGE, 'left', 54, 'black')                       
+                        MKD(VEICULO_MAIS_DIRIGE, 'left', 46, 'black')                       
                     st.write('') 
             ColsB = st.columns(3)
             with ColsB[0]:                                
@@ -376,7 +376,7 @@ if uploaded_file is not None:
                     with ColsB1[0]:
                         MKD('Tempo Total Movimento', 'left', 28, 'black')                        
                     with ColsB1[1]:  
-                        MKD(TEMPO_TOTAL_MOVMTO, 'left', 54, 'blue')    
+                        MKD(TEMPO_TOTAL_MOVMTO, 'left', 46, 'blue')    
                 
                 st.write('')
                 Container6 = st.container(border = True)
@@ -386,7 +386,7 @@ if uploaded_file is not None:
                     with ColsB2[0]:
                         MKD('Tempo Total Parado', 'left', 28, 'black')                        
                     with ColsB2[1]:  
-                        MKD(TEMPO_TOTAL_STOP, 'left', 54, 'orange')         
+                        MKD(TEMPO_TOTAL_STOP, 'left', 46, 'orange')         
 
             with ColsB[1]:
                 Container7 = st.container(border = True)
