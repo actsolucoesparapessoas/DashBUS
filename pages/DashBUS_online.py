@@ -324,69 +324,70 @@ if ObterDados:
                 st.write(FiltraData)
             
             st.divider()
-            st.title("DashBUS - Painel para análise da Dirigibilidade Motoristas")
+            st.title("DashBUS - Painel p/ análise da Dirigibilidade dos Motoristas")
             ColsA = st.columns(4)
             with ColsA[0]:
                 Container1 = st.container(border = True)
                 with Container1:                     
                     ColsA1 = st.columns(2)
                     with ColsA1[0]: 
-                        MKD('QTD de Acels. Rápidas', 'left', 28, 'black')
+                        MKD('QTD de Acels. Rápidas', 'left', 22, 'black')
                     with ColsA1[1]:  
-                        MKD(ACEL_RAP_TOTAL, 'left', 64, 'darkred')                        
-                    MKD('O Desvio Padrão da Média é ' + str(round(ACEL_RAP_STD, 2)), 'left', 22, 'black')                        
+                        MKD(ACEL_RAP_TOTAL, 'left', 46, 'darkred')                        
+                    MKD('O Desvio Padrão da Média é ' + str(round(ACEL_RAP_STD, 2)), 'left', 18, 'black')                        
             with ColsA[1]:
                 Container2 = st.container(border = True)
                 with Container2:                     
                     ColsA2 = st.columns(2)
                     with ColsA2[0]:
-                        MKD('QTD de Freadas Bruscas', 'left', 28, 'black')                        
+                        MKD('QTD de Freadas Bruscas', 'left', 22, 'black')                                                                  
                     with ColsA2[1]:  
-                        MKD(FREA_B_TOTAL, 'left', 64, 'red')                       
-                    MKD('O Desvio Padrão da Média é ' + str(round(FREA_B_STD, 2)), 'left', 22, 'black')                     
+                        MKD(FREA_B_TOTAL, 'left', 46, 'red')
+                    MKD('O Desvio Padrão da Média é ' + str(round(FREA_B_STD, 2)), 'left', 18, 'black')                     
             with ColsA[2]:           
                 Container3 = st.container(border = True)
                 with Container3:                     
+                    st.write('')
                     ColsA3 = st.columns(2)
                     with ColsA3[0]:
-                        MKD('QTD de Curvas Acentuadas', 'left', 28, 'black')                        
+                        MKD('QTD de Curvas Acentuadas', 'left', 22, 'black')                        
                     with ColsA3[1]:  
-                        MKD(CURVA_A_TOTAL, 'left', 64, 'orange')                       
-                    MKD('O Desvio Padrão da Média é ' + str(round(CURVA_A_STD, 2)), 'left', 22, 'black')            
+                        MKD(CURVA_A_TOTAL, 'left', 46, 'orange')                       
+                    MKD('O Desvio Padrão da Média é ' + str(round(CURVA_A_STD, 2)), 'left', 18, 'black')            
             with ColsA[3]:
                 Container4 = st.container(border = True)
                 with Container4: 
                     #st.metric(label="Veículo Mais Dirige", value=str(VEICULO_MAIS_DIRIGE), delta='')
                     st.write('')
-                    MKD('DADOS DOS VEÍCULOS UTILIZADOS', 'left', 22, 'black')
+                    MKD('DADOS DOS VEÍCULOS UTILIZADOS', 'left', 18, 'black')
                     ColsA4 = st.columns(2)
                     with ColsA4[0]:
-                        MKD('Veículo que mais Dirige ', 'left', 28, 'black')                        
+                        MKD('Veículo que mais Dirige ', 'left', 22, 'black')                        
                     with ColsA4[1]:  
-                        MKD(VEICULO_MAIS_DIRIGE, 'left', 54, 'black')                       
-                    st.write('')
+                        MKD(VEICULO_MAIS_DIRIGE, 'left', 42, 'black')                       
+                    st.write('') 
             ColsB = st.columns(3)
             with ColsB[0]:                                
                 Container5 = st.container(border = True)
                 with Container5:
                     st.write('')
                     st.write('')                    
-                    MKD('TEMPO VEÍCULO EM MOVIMENTO', 'left', 22, 'blue')
+                    MKD('TEMPO VEÍCULO EM MOVIMENTO', 'left', 18, 'blue')
                     ColsB1 = st.columns(2)
                     with ColsB1[0]:
-                        MKD('Tempo Total Movimento', 'left', 28, 'black')                        
+                        MKD('Tempo Total Movimento', 'left', 22, 'black')                        
                     with ColsB1[1]:  
-                        MKD(TEMPO_TOTAL_MOVMTO, 'left', 54, 'blue')    
+                        MKD(TEMPO_TOTAL_MOVMTO, 'left', 42, 'blue')    
                 
                 st.write('')
                 Container6 = st.container(border = True)
                 with Container6: 
-                    MKD('TEMPO VEÍCULO PARADO', 'left', 22, 'orange')
+                    MKD('TEMPO VEÍCULO PARADO', 'left', 18, 'orange')
                     ColsB2 = st.columns(2)
                     with ColsB2[0]:
-                        MKD('Tempo Total Parado', 'left', 28, 'black')                        
+                        MKD('Tempo Total Parado', 'left', 22, 'black')                        
                     with ColsB2[1]:  
-                        MKD(TEMPO_TOTAL_STOP, 'left', 54, 'orange')         
+                        MKD(TEMPO_TOTAL_STOP, 'left', 42, 'orange')         
 
             with ColsB[1]:
                 Container7 = st.container(border = True)
@@ -432,9 +433,4 @@ if ObterDados:
                     Colunas = ['Aceleração', 'Freadas_B']
                     Grafico_MapaCalor(DFmat, OPT, Colunas, 4, 5, 'Wistia')   
 else:
-    st.write("Por favor, faça o upload de um arquivo XLSX.")
-
-
-
-
-
+    st.write("Por favor, insira a url da Planilha CSV disponível online.")
