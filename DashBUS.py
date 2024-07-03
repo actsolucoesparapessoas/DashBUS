@@ -340,9 +340,9 @@ if uploaded_file is not None:
                 with Container2:                     
                     ColsA2 = st.columns(2)
                     with ColsA2[0]:
-                        MKD('QTD de Freadas Bruscas', 'left', 28, 'black')                        
-                        MKD(FREA_B_TOTAL, 'left', 46, 'red')                       
+                        MKD('QTD de Freadas Bruscas', 'left', 28, 'black')                                                                  
                     with ColsA2[1]:  
+                        MKD(FREA_B_TOTAL, 'left', 46, 'red')
                     MKD('O Desvio Padrão da Média é ' + str(round(FREA_B_STD, 2)), 'left', 18, 'black')                     
             with ColsA[2]:           
                 Container3 = st.container(border = True)
