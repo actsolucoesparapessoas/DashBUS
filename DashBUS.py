@@ -211,7 +211,8 @@ icone = "©️"
 st.set_page_config(page_title=titulo, layout = Layout, initial_sidebar_state = barra_lateral, menu_items={'Get Help': (ajuda),
                                                                                                                             'Report a bug': (bug),
                                                                                                                             'About': (sobre)},page_icon=icone)
-DadosOnline = False
+image = Image.open('act_solucoes-para-pessoas_LOGO150dpi.jpg')    
+st.sidebar.image(image, width=300)
                  
 # Função para fazer o upload do arquivo
 uploaded_file = st.file_uploader("Escolha um arquivo XLSX", type="xlsx")
