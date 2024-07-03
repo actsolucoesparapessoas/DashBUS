@@ -347,6 +347,7 @@ if uploaded_file is not None:
             with ColsA[2]:           
                 Container3 = st.container(border = True)
                 with Container3:                     
+                    st.write('')
                     ColsA3 = st.columns(2)
                     with ColsA3[0]:
                         MKD('QTD de Curvas Acentuadas', 'left', 22, 'black')                        
@@ -376,7 +377,7 @@ if uploaded_file is not None:
                     with ColsB1[0]:
                         MKD('Tempo Total Movimento', 'left', 28, 'black')                        
                     with ColsB1[1]:  
-                        MKD(TEMPO_TOTAL_MOVMTO, 'left', 46, 'blue')    
+                        MKD(TEMPO_TOTAL_MOVMTO, 'left', 42, 'blue')    
                 
                 st.write('')
                 Container6 = st.container(border = True)
@@ -386,7 +387,7 @@ if uploaded_file is not None:
                     with ColsB2[0]:
                         MKD('Tempo Total Parado', 'left', 28, 'black')                        
                     with ColsB2[1]:  
-                        MKD(TEMPO_TOTAL_STOP, 'left', 46, 'orange')         
+                        MKD(TEMPO_TOTAL_STOP, 'left', 42, 'orange')         
 
             with ColsB[1]:
                 Container7 = st.container(border = True)
