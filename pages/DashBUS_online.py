@@ -199,7 +199,6 @@ def MKD(texto, alinhamento = "center", tamanho_fonte = 28, cor_fonte = "darkblue
     st.markdown(conteudo, unsafe_allow_html=True)
     mystyle0 = '''<style> p{text-align:%s;}</style>'''%(alinhamento)
     st.markdown(mystyle0, unsafe_allow_html=True) 
-
  
 titulo  = "DashBUS 0.1"
 Layout="wide"
@@ -212,8 +211,9 @@ st.set_page_config(page_title=titulo, layout = Layout, initial_sidebar_state = b
                                                                                                                             'Report a bug': (bug),
                                                                                                                             'About': (sobre)},page_icon=icone)
 CaminhoPlanilha = st.text_input('Url da Planilha:', 'https://docs.google.com/spreadsheets/d/e/2PACX-1vREpBRK2z0nM5_Qx9AyHd8ZwKeCH-VOa_7M1O7X6m93NiN1K3SpFK9Mx3P11QcovA/pub?gid=1892953173&single=true&output=csv')
+st.write('Link de Edição da Planilha: ', 'https://docs.google.com/spreadsheets/d/1gfEHAzjGLCZbwK_9p45zNEbqPfLsNUG8/edit?usp=sharing&ouid=108524382630721645928&rtpof=true&sd=true')
 ObterDados = st.button(label = '✔️ Clique para Obter Dados Online')
-st.write('Endereço da Planilha: ', 'https://docs.google.com/spreadsheets/d/1gfEHAzjGLCZbwK_9p45zNEbqPfLsNUG8/edit?usp=sharing&ouid=108524382630721645928&rtpof=true&sd=true')
+
 if ObterDados:
     url = CaminhoPlanilha
     r = requests.get(url)
