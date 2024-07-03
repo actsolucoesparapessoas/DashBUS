@@ -349,7 +349,7 @@ if uploaded_file is not None:
                 with Container3:                     
                     ColsA3 = st.columns(2)
                     with ColsA3[0]:
-                        MKD('QTD de Curvas Acentuadas', 'left', 28, 'black')                        
+                        MKD('QTD de Curvas Acentuadas', 'left', 26, 'black')                        
                     with ColsA3[1]:  
                         MKD(CURVA_A_TOTAL, 'left', 46, 'orange')                       
                     MKD('O Desvio Padrão da Média é ' + str(round(CURVA_A_STD, 2)), 'left', 22, 'black')            
@@ -363,7 +363,7 @@ if uploaded_file is not None:
                     with ColsA4[0]:
                         MKD('Veículo que mais Dirige ', 'left', 28, 'black')                        
                     with ColsA4[1]:  
-                        MKD(VEICULO_MAIS_DIRIGE, 'left', 46, 'black')                       
+                        MKD(VEICULO_MAIS_DIRIGE, 'left', 44, 'black')                       
                     st.write('') 
             ColsB = st.columns(3)
             with ColsB[0]:                                
