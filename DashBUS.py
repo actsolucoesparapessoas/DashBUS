@@ -324,7 +324,7 @@ if uploaded_file is not None:
                 st.write(FiltraData)
             
             st.divider()
-            st.title("DashBUS - Painel para análise da Dirigibilidade dos Motoristas")
+            st.title("DashBUS - Painel p/ análise da Dirigibilidade dos Motoristas")
             ColsA = st.columns(4)
             with ColsA[0]:
                 Container1 = st.container(border = True)
@@ -349,7 +349,7 @@ if uploaded_file is not None:
                 with Container3:                     
                     ColsA3 = st.columns(2)
                     with ColsA3[0]:
-                        MKD('QTD de Curvas Acentuadas', 'left', 26, 'black')                        
+                        MKD('QTD de Curvas Acentuadas', 'left', 24, 'black')                        
                     with ColsA3[1]:  
                         MKD(CURVA_A_TOTAL, 'left', 46, 'orange')                       
                     MKD('O Desvio Padrão da Média é ' + str(round(CURVA_A_STD, 2)), 'left', 18, 'black')            
