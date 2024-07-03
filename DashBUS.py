@@ -218,8 +218,7 @@ uploaded_file = st.file_uploader("Escolha um arquivo XLSX", type="xlsx")
 
 if uploaded_file is not None:
     # Leitura do arquivo XLSX em um DataFrame
-    if not DadosOnline:
-        df = pd.read_excel(uploaded_file)
+    df = pd.read_excel(uploaded_file)
     
     # Exibindo as três primeiras linhas do DataFrame
     #st.write("As três primeiras linhas do DataFrame são:")
