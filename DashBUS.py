@@ -204,7 +204,7 @@ def MKD(texto, alinhamento = "center", tamanho_fonte = 28, cor_fonte = "darkblue
 titulo  = "DashBUS 0.1"
 Layout="wide"
 barra_lateral = "auto"
-ajuda = "https://docs.streamlit.io"
+ajuda = "https://www.facebook.com/profile.php?id=100083637037879&is_tour_dismissed"
 bug = "mailto:informacoes.actsp@gmail.com"
 sobre="#### **ACT - Soluções para Pessoas**."
 icone = "©️"
