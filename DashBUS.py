@@ -333,7 +333,7 @@ if uploaded_file is not None:
                     with ColsA1[0]: 
                         MKD('QTD de Acels. Rápidas', 'left', 28, 'black')
                     with ColsA1[1]:  
-                        MKD(ACEL_RAP_TOTAL, 'left', 64, 'darkred')                        
+                        MKD(ACEL_RAP_TOTAL, 'left', 46, 'darkred')                        
                     MKD('O Desvio Padrão da Média é ' + str(round(ACEL_RAP_STD, 2)), 'left', 22, 'black')                        
             with ColsA[1]:
                 Container2 = st.container(border = True)
@@ -342,7 +342,7 @@ if uploaded_file is not None:
                     with ColsA2[0]:
                         MKD('QTD de Freadas Bruscas', 'left', 28, 'black')                        
                     with ColsA2[1]:  
-                        MKD(FREA_B_TOTAL, 'left', 64, 'red')                       
+                        MKD(FREA_B_TOTAL, 'left', 46, 'red')                       
                     MKD('O Desvio Padrão da Média é ' + str(round(FREA_B_STD, 2)), 'left', 22, 'black')                     
             with ColsA[2]:           
                 Container3 = st.container(border = True)
@@ -351,7 +351,7 @@ if uploaded_file is not None:
                     with ColsA3[0]:
                         MKD('QTD de Curvas Acentuadas', 'left', 28, 'black')                        
                     with ColsA3[1]:  
-                        MKD(CURVA_A_TOTAL, 'left', 64, 'orange')                       
+                        MKD(CURVA_A_TOTAL, 'left', 46, 'orange')                       
                     MKD('O Desvio Padrão da Média é ' + str(round(CURVA_A_STD, 2)), 'left', 22, 'black')            
             with ColsA[3]:
                 Container4 = st.container(border = True)
@@ -433,8 +433,3 @@ if uploaded_file is not None:
                     Grafico_MapaCalor(DFmat, OPT, Colunas, 4, 5, 'Wistia')   
 else:
     st.write("Por favor, faça o upload de um arquivo XLSX.")
-
-
-
-
-
