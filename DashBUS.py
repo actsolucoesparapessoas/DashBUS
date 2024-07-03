@@ -334,16 +334,16 @@ if uploaded_file is not None:
                         MKD('QTD de Acels. Rápidas', 'left', 28, 'black')
                     with ColsA1[1]:  
                         MKD(ACEL_RAP_TOTAL, 'left', 46, 'darkred')                        
-                    MKD('O Desvio Padrão da Média é ' + str(round(ACEL_RAP_STD, 2)), 'left', 22, 'black')                        
+                    MKD('O Desvio Padrão da Média é ' + str(round(ACEL_RAP_STD, 2)), 'left', 18, 'black')                        
             with ColsA[1]:
                 Container2 = st.container(border = True)
                 with Container2:                     
                     ColsA2 = st.columns(2)
                     with ColsA2[0]:
                         MKD('QTD de Freadas Bruscas', 'left', 28, 'black')                        
-                    with ColsA2[1]:  
                         MKD(FREA_B_TOTAL, 'left', 46, 'red')                       
-                    MKD('O Desvio Padrão da Média é ' + str(round(FREA_B_STD, 2)), 'left', 22, 'black')                     
+                    with ColsA2[1]:  
+                    MKD('O Desvio Padrão da Média é ' + str(round(FREA_B_STD, 2)), 'left', 18, 'black')                     
             with ColsA[2]:           
                 Container3 = st.container(border = True)
                 with Container3:                     
@@ -352,13 +352,13 @@ if uploaded_file is not None:
                         MKD('QTD de Curvas Acentuadas', 'left', 26, 'black')                        
                     with ColsA3[1]:  
                         MKD(CURVA_A_TOTAL, 'left', 46, 'orange')                       
-                    MKD('O Desvio Padrão da Média é ' + str(round(CURVA_A_STD, 2)), 'left', 22, 'black')            
+                    MKD('O Desvio Padrão da Média é ' + str(round(CURVA_A_STD, 2)), 'left', 18, 'black')            
             with ColsA[3]:
                 Container4 = st.container(border = True)
                 with Container4: 
                     #st.metric(label="Veículo Mais Dirige", value=str(VEICULO_MAIS_DIRIGE), delta='')
                     st.write('')
-                    MKD('DADOS DOS VEÍCULOS UTILIZADOS', 'left', 22, 'black')
+                    MKD('DADOS DOS VEÍCULOS UTILIZADOS', 'left', 18, 'black')
                     ColsA4 = st.columns(2)
                     with ColsA4[0]:
                         MKD('Veículo que mais Dirige ', 'left', 28, 'black')                        
@@ -371,7 +371,7 @@ if uploaded_file is not None:
                 with Container5:
                     st.write('')
                     st.write('')                    
-                    MKD('TEMPO VEÍCULO EM MOVIMENTO', 'left', 22, 'blue')
+                    MKD('TEMPO VEÍCULO EM MOVIMENTO', 'left', 18, 'blue')
                     ColsB1 = st.columns(2)
                     with ColsB1[0]:
                         MKD('Tempo Total Movimento', 'left', 28, 'black')                        
@@ -381,7 +381,7 @@ if uploaded_file is not None:
                 st.write('')
                 Container6 = st.container(border = True)
                 with Container6: 
-                    MKD('TEMPO VEÍCULO PARADO', 'left', 22, 'orange')
+                    MKD('TEMPO VEÍCULO PARADO', 'left', 18, 'orange')
                     ColsB2 = st.columns(2)
                     with ColsB2[0]:
                         MKD('Tempo Total Parado', 'left', 28, 'black')                        
