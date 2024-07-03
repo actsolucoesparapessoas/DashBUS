@@ -212,7 +212,8 @@ st.set_page_config(page_title=titulo, layout = Layout, initial_sidebar_state = b
                                                                                                                             'About': (sobre)},page_icon=icone)
 image = Image.open('act_solucoes-para-pessoas_LOGO150dpi.jpg')    
 st.sidebar.image(image, width=300)
-st.siderbar.write('Desenvoolvedor: Massaki Igarashi')  
+st.sidebar.write("Desenvolvedor: Massaki Igarashi")  
+
 CaminhoPlanilha = st.text_input('Url da Planilha:', 'https://docs.google.com/spreadsheets/d/e/2PACX-1vREpBRK2z0nM5_Qx9AyHd8ZwKeCH-VOa_7M1O7X6m93NiN1K3SpFK9Mx3P11QcovA/pub?gid=1892953173&single=true&output=csv')
 st.write('Link de Edição da Planilha: ', 'https://docs.google.com/spreadsheets/d/1gfEHAzjGLCZbwK_9p45zNEbqPfLsNUG8/edit?usp=sharing&ouid=108524382630721645928&rtpof=true&sd=true')
 ObterDados = st.button(label = '✔️ Clique para Obter Dados Online')
