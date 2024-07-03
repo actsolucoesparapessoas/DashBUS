@@ -213,7 +213,7 @@ st.set_page_config(page_title=titulo, layout = Layout, initial_sidebar_state = b
                                                                                                                             'About': (sobre)},page_icon=icone)
 image = Image.open('act_solucoes-para-pessoas_LOGO150dpi.jpg')    
 st.sidebar.image(image, width=300)
-                 
+st.siderbar.write('Desenvoolvedor: Massaki Igarashi')                 
 # Função para fazer o upload do arquivo
 uploaded_file = st.file_uploader("Escolha um arquivo XLSX", type="xlsx")
 
