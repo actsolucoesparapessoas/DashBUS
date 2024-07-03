@@ -331,7 +331,7 @@ if uploaded_file is not None:
                 with Container1:                     
                     ColsA1 = st.columns(2)
                     with ColsA1[0]: 
-                        MKD('QTD de Acels. Rápidas', 'left', 28, 'black')
+                        MKD('QTD de Acels. Rápidas', 'left', 22, 'black')
                     with ColsA1[1]:  
                         MKD(ACEL_RAP_TOTAL, 'left', 46, 'darkred')                        
                     MKD('O Desvio Padrão da Média é ' + str(round(ACEL_RAP_STD, 2)), 'left', 18, 'black')                        
@@ -340,7 +340,7 @@ if uploaded_file is not None:
                 with Container2:                     
                     ColsA2 = st.columns(2)
                     with ColsA2[0]:
-                        MKD('QTD de Freadas Bruscas', 'left', 28, 'black')                                                                  
+                        MKD('QTD de Freadas Bruscas', 'left', 22, 'black')                                                                  
                     with ColsA2[1]:  
                         MKD(FREA_B_TOTAL, 'left', 46, 'red')
                     MKD('O Desvio Padrão da Média é ' + str(round(FREA_B_STD, 2)), 'left', 18, 'black')                     
@@ -364,7 +364,7 @@ if uploaded_file is not None:
                     with ColsA4[0]:
                         MKD('Veículo que mais Dirige ', 'left', 22, 'black')                        
                     with ColsA4[1]:  
-                        MKD(VEICULO_MAIS_DIRIGE, 'left', 44, 'black')                       
+                        MKD(VEICULO_MAIS_DIRIGE, 'left', 42, 'black')                       
                     st.write('') 
             ColsB = st.columns(3)
             with ColsB[0]:                                
@@ -375,7 +375,7 @@ if uploaded_file is not None:
                     MKD('TEMPO VEÍCULO EM MOVIMENTO', 'left', 18, 'blue')
                     ColsB1 = st.columns(2)
                     with ColsB1[0]:
-                        MKD('Tempo Total Movimento', 'left', 28, 'black')                        
+                        MKD('Tempo Total Movimento', 'left', 22, 'black')                        
                     with ColsB1[1]:  
                         MKD(TEMPO_TOTAL_MOVMTO, 'left', 42, 'blue')    
                 
@@ -385,7 +385,7 @@ if uploaded_file is not None:
                     MKD('TEMPO VEÍCULO PARADO', 'left', 18, 'orange')
                     ColsB2 = st.columns(2)
                     with ColsB2[0]:
-                        MKD('Tempo Total Parado', 'left', 28, 'black')                        
+                        MKD('Tempo Total Parado', 'left', 22, 'black')                        
                     with ColsB2[1]:  
                         MKD(TEMPO_TOTAL_STOP, 'left', 42, 'orange')         
 
